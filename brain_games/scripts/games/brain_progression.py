@@ -1,10 +1,13 @@
+#!/usr/bin/env python3
+
 
 from random import randint
 from ..brain_interface import run_the_game
 
-ATTEMPTS_NUMBER = 3
 
+ATTEMPTS_NUMBER = 3
 QUESTION = "What number is missing in the progression?"
+
 
 def generate_question():
     random_number = randint(0,100)
@@ -22,11 +25,10 @@ def generate_question():
     correct_answer = str(random_number + missing_point*progression_step)
     return (random_input, correct_answer)
 
-def main():
 
+def main():
     run_the_game(ATTEMPTS_NUMBER, QUESTION, generate_question)
 
 
 if __name__ == '__main__':
     main()
-

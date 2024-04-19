@@ -1,10 +1,13 @@
+#!/usr/bin/env python3
+
 
 from random import randint
 from ..brain_interface import run_the_game
 
-ATTEMPTS_NUMBER = 3
 
+ATTEMPTS_NUMBER = 3
 QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
 
 def isPrime(number):
     if number == 0:
@@ -24,8 +27,8 @@ def generate_question():
     correct_answer = "yes" if isPrime(random_input) == True else "no"
     return (random_input, correct_answer)
 
-def main():
 
+def main():
     run_the_game(ATTEMPTS_NUMBER, QUESTION, generate_question)
 
 

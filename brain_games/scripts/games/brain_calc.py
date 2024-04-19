@@ -1,10 +1,13 @@
+#!/usr/bin/env python3
+
 
 from random import randint, choice
 from ..brain_interface import run_the_game
 
-ATTEMPTS_NUMBER = 3
 
+ATTEMPTS_NUMBER = 3
 QUESTION = "What is the result of the expression?"
+
 
 def generate_question():
     random_sign = choice(["+","-","*"])
@@ -20,10 +23,8 @@ def generate_question():
     return (random_input, correct_answer)
 
 def main():
-
     run_the_game(ATTEMPTS_NUMBER, QUESTION, generate_question)
 
 
 if __name__ == '__main__':
     main()
-
