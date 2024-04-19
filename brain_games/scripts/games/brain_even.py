@@ -10,12 +10,12 @@ QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def generate_question():
-    random_input = randint(0,1000)
+    random_input = randint(0, 1000)
     correct_answer = "yes" if random_input % 2 == 0 else "no"
     return (random_input, correct_answer)
 
 
-def main():    
+def main():
     run_the_game(ATTEMPTS_NUMBER, QUESTION, generate_question)
 
 
