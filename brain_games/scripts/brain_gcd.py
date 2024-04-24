@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 
-from random import randint, choice
 from brain_games.scripts.brain_interface import run_the_game
 from ..import_ import generate_question_gcd
 
