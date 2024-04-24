@@ -1,10 +1,18 @@
 from random import randint
 
 
+NUMBER_START_RAND_FROM = 0
+NUMBER_END_RAND_WITH = 100
+LENGTH_START_RAND_FROM = 6
+LENGTH_END_RAND_WITH = 10
+STEP_START_RAND_FROM = 0
+STEP_END_RAND_WITH = 10
+
+
 def generate_question():
-    random_number = randint(0, 100)
-    progression_length = randint(6, 10)
-    progression_step = randint(0, 10)
+    random_number = randint(NUMBER_START_RAND_FROM, NUMBER_END_RAND_WITH)
+    progression_length = randint(LENGTH_START_RAND_FROM, LENGTH_END_RAND_WITH)
+    progression_step = randint(STEP_START_RAND_FROM, STEP_END_RAND_WITH)
     missing_point = randint(0, progression_length - 1)
     random_input = ''
     i = 0
