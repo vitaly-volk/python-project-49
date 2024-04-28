@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-from brain_games.scripts.brain_interface import run_the_game
+from brain_games.engine import run_the_game
 from ..import_ import generate_question_gcd
 
 
