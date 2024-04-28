@@ -2,14 +2,11 @@
 
 
 from brain_games.engine import run_game
-from brain_games.games.brain_prog import generate_question
-
-
-QUESTION = 'What number is missing in the progression?'
+from brain_games.games import brain_prog
 
 
 def main():
-    run_game(QUESTION, generate_question)
+    run_game(brain_prog)
 
 
 if __name__ == '__main__':

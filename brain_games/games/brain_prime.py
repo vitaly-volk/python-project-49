@@ -2,6 +2,7 @@ from random import randint
 
 START_RANDINT_FROM = 0
 END_RANDINT_WITH = 100
+QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def isPrime(number):

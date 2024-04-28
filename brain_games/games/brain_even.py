@@ -3,6 +3,7 @@ from random import randint
 
 START_RANDINT_FROM = 0
 END_RANDINT_WITH = 100
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def generate_question():

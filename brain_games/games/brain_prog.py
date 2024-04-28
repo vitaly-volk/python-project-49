@@ -7,6 +7,7 @@ LENGTH_START_RAND_FROM = 6
 LENGTH_END_RAND_WITH = 10
 STEP_START_RAND_FROM = 0
 STEP_END_RAND_WITH = 10
+QUESTION = 'What number is missing in the progression?'
 
 
 def generate_question():

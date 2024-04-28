@@ -2,14 +2,11 @@
 
 
 from brain_games.engine import run_game
-from brain_games.games.brain_calc import generate_question
-
-
-QUESTION = 'What is the result of the expression?'
+from brain_games.games import brain_calc
 
 
 def main():
-    run_game(QUESTION, generate_question)
+    run_game(brain_calc)
 
 
 if __name__ == '__main__':

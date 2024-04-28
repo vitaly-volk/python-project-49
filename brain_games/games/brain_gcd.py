@@ -4,6 +4,7 @@ from math import gcd
 
 START_RANDINT_FROM = 0
 END_RANDINT_WITH = 100
+QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
 def generate_question():

@@ -34,7 +34,12 @@ def inform_about_win(user_name):
     print(f'Congratulations, {user_name}!')
 
 
-def run_game(QUESTION, generate_question):
+def run_game(module):
+
+    QUESTION = module.QUESTION
+
+    generate_question = module.generate_question
+
     user_is_correct = True
 
     attempts = ATTEMPTS_NUMBER

@@ -2,14 +2,11 @@
 
 
 from brain_games.engine import run_game
-from brain_games.games.brain_prime import generate_question
-
-
-QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+from brain_games.games import brain_prime
 
 
 def main():
-    run_game(QUESTION, generate_question)
+    run_game(brain_prime)
 
 
 if __name__ == '__main__':

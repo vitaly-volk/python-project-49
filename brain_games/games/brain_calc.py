@@ -3,6 +3,7 @@ from random import randint, choice
 
 START_RANDINT_FROM = 0
 END_RANDINT_WITH = 100
+QUESTION = 'What is the result of the expression?'
 
 
 def generate_question():
