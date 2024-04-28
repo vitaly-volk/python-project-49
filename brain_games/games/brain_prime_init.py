@@ -1,5 +1,8 @@
 from random import randint
 
+START_RANDINT_FROM = 0
+END_RANDINT_WITH = 100
+
 
 def isPrime(number):
     if number == 0:
@@ -15,6 +18,6 @@ def isPrime(number):
 
 
 def generate_question():
-    random_input = randint(0, 100)
+    random_input = randint(START_RANDINT_FROM, END_RANDINT_WITH)
     correct_answer = 'yes' if isPrime(random_input) else 'no'
     return (random_input, correct_answer)
