@@ -2,14 +2,14 @@
 
 
 from brain_games.engine import run_game
-from ..import_ import generate_question_even
+from brain_games.games.brain_even import generate_question
 
 
 QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def main():
-    run_game(QUESTION, generate_question_even)
+    run_game(QUESTION, generate_question)
 
 
 if __name__ == '__main__':
