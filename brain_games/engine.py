@@ -16,7 +16,7 @@ def run_game(module):
 
     while user_is_correct and attempts > 0:
 
-        random_input, correct_answer = module.generate_question()
+        random_input, correct = module.generate_question()
 
         print(module.QUESTION)
 
@@ -24,11 +24,11 @@ def run_game(module):
 
         answer = input('Your answer: ')
 
-        if answer != correct_answer:
+        if answer != correct:
             user_is_correct = False
 
         if not user_is_correct:
-            print(f'{answer} is wrong answer ;(. Correct answer was {correct_answer}')
+            print(f'{answer} is wrong answer ;(. Correct answer was {correct}')
             print(f'Let\'s try again, {user_name}!')
         else:
             print('Correct!')
