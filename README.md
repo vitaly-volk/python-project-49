@@ -6,9 +6,15 @@ Clone the repository:
 
     git clone https://github.com/vitaly-volk/python-project-49.git
 
+Go to the main directory:
+
+    cd python-project-49
+
 Then run
 
     poetry build
+
+to build the project.
 
 **Start Game**
 
@@ -16,7 +22,7 @@ To start, run:
 
     poetry run *name of the game*
 
-...selecting the name of the game from the list:
+...selecting **name of the game** from the list:
 
 * brain-even
 * brain-progression
