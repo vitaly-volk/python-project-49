@@ -36,10 +36,6 @@ def inform_about_win(user_name):
 
 def run_game(module):
 
-    QUESTION = module.QUESTION
-
-    generate_question = module.generate_question
-
     user_is_correct = True
 
     attempts = ATTEMPTS_NUMBER
@@ -50,9 +46,9 @@ def run_game(module):
 
     while user_is_correct and attempts > 0:
 
-        random_input, correct_answer = generate_question()
+        random_input, correct_answer = module.generate_question()
 
-        ask_question(QUESTION, random_input)
+        ask_question(module.QUESTION, random_input)
         answer = get_answer()
 
         if answer != correct_answer:
