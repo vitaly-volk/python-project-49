@@ -4,17 +4,19 @@ A set of CLI-based games to entertain your math brain.
 
 Clone the repository:
 
-_git clone https://github.com/vitaly-volk/python-project-49.git
-_
+    git clone https://github.com/vitaly-volk/python-project-49.git
+
 Then run
 
-$ poetry build
+    poetry build
 
 **Start Game**
 
 To start, run:
 
-_poetry run *name of the game*:_
+    poetry run *name of the game*
+
+...selecting the name of the game from the list:
 
 * brain-even
 * brain-progression
