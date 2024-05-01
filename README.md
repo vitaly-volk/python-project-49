@@ -1,5 +1,27 @@
 A set of CLI-based games to entertain your math brain.
 
+Installation
+
+Clone the repository and install manually:
+
+$ git clone https://github.com/vitaly-volk/python-project-49.git
+
+Then use
+
+$ poetry build
+
+Start Game
+
+To start, run:
+
+$ poetry run *name of the game*:
+
+* brain-even
+* brain-progression
+* brain-gcd
+* brain-prime
+* brain-calc
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/vitaly-volk/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/vitaly-volk/python-project-49/actions)
 
