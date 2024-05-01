@@ -1,17 +1,17 @@
 A set of CLI-based games to entertain your math brain.
 
-Installation
+**Installation**
 
-Clone the repository and install manually:
+Clone the repository:
 
-$ git clone https://github.com/vitaly-volk/python-project-49.git
+git clone https://github.com/vitaly-volk/python-project-49.git
 
-Then use
+Then run
 
 $ poetry build
 
-Start Game
-
+**Start Game
+**
 To start, run:
 
 $ poetry run *name of the game*:
