@@ -5,7 +5,7 @@ END_RANDINT_WITH = 100
 QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def isPrime(number):
+def is_prime(number):
     if number == 0:
         return False
     if number == 1:
@@ -20,5 +20,5 @@ def isPrime(number):
 
 def generate_question():
     random_input = randint(START_RANDINT_FROM, END_RANDINT_WITH)
-    correct_answer = 'yes' if isPrime(random_input) else 'no'
+    correct_answer = 'yes' if is_prime(random_input) else 'no'
     return (random_input, correct_answer)
